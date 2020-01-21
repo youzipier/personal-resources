@@ -1,0 +1,156 @@
+{% extends 'base.html' %}
+{% load OurTag %}
+{% block content %}
+
+    <!--移动端  Mmenu-->
+    <nav id="mmenu">
+        <ul>
+            <li><a href="">English</a></li>
+            <li><a href="/">首 页</a></li>
+            <li><a href="brand.html">品牌简介</a>
+                <ul>
+                    <li><a href="brand.html">品牌简介</a></li>
+                    <li><a href="">企业文化</a></li>
+                    <li><a href="honor.html">荣誉资质</a></li>
+                </ul>
+            </li>
+            <li><a href="{% url 'flower:f_list' %}">产品中心</a>
+                <ul>
+                    <li><a href="">婚礼花艺</a>
+                        <ul>
+                            <li><a href="">求婚必备</a></li>
+                            <li><a href="">情人节专属</a></li>
+                            <li><a href="">其他鲜花</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="{% url 'flower:f_list' %}">爱情鲜花</a>
+                        <ul>
+                            <li><a href="">求婚必备</a></li>
+                            <li><a href="{% url 'flower:f_list' %}">情人节专属</a></li>
+                            <li><a href="">其他鲜花</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">长辈鲜花</a>
+                        <ul>
+                            <li><a href="">求婚必备</a></li>
+                            <li><a href="">情人节专属</a></li>
+                            <li><a href="">其他鲜花</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+            <li><a href="case.html">经典案例</a>
+                <ul>
+                    <li><a href="case.html">经典案例</a></li>
+                    <li><a href="">新增分类</a></li>
+                </ul>
+            </li>
+            <li><a href="flower.html">花之物语</a>
+                <ul>
+                    <li><a href="flower.html">花之物语</a></li>
+                    <li><a href="">养花知识</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">联系我们</a>
+                <ul>
+                    <li><a href="contact.html">联系我们</a></li>
+                    <li><a href="message.html">在线留言</a></li>
+                    <li><a href="job.html">人才招聘</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+
+
+    <!--爱情鲜花-->
+    <div class="container love-flowers clearfix">
+        <div class="loveh">
+            花之物语<span>Love flowers</span><a href="{% url 'flower:f_list' %}" class="detai pull-right">+</a>
+            <div class="line-bottom"></div>
+        </div>
+        <div class="love-wrap">
+
+            <ul class="clearfix">
+                {% for flower in flower_list|limit_4 %}
+                    <li class="wow bounceIn" data-wow-delay="0.4s">
+                        <div class="pic"><a href="{% url 'flower:f_detail' %}?id={{ flower.id }}"><img src="/static/{{ flower.picture }}"
+                                                                                    class="vcenter"/></a></div>
+                        <p><a href="{% url 'flower:f_detail' %}?id={{ flower.id }}">{{ flower.name }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="brand-in container">
+        <div class="brand-in-wrap">
+            <div class="brand-left wow fadeInLeft" data-wow-delay="0.4s">
+                <div class="loveh">
+                    2020<span>Brand introduction </span>
+                    <div class="line-bottom"></div>
+                </div>
+                <p>2019年即将结束，往后的日子都是崭新的，连呼吸的空气也是新的，那就怀着满腔热情，一切重新出发吧! <br>
+                    2020，我们都要好好的，把烦恼抛在一边，把快乐记在心间，看不惯的事，躲远点，熬不过的难，别抱怨。<br>
+                    世事苍茫，岁月无常，愿你别回头也别将就，享受每时刻，都是最好的安排，2019再见，2020你好!
+                </p>
+                <em>愿 2020岁岁常欢愉，万事皆胜意</em>
+                <div class="read-more">
+                    <a href="brand.html">Read more</a>
+                </div>
+            </div>
+            <div class="brand-right wow fadeInRight" data-wow-delay="0.4s">
+                <img src="/static/images/brand-in.png" alt=""/>
+            </div>
+        </div>
+    </div>
+    <!--经典案例-->
+
+    <div class="sycase container">
+        <div class="sycase-wrap clearfix">
+            <div class="sycase-title">
+                <div class="sycase-txt">经典案例</div>
+            </div>
+            <ul>
+                <li class="wow fadeInDown" data-wow-delay="0.4s">
+                    <div class="pic"><a href="case_show.html"><img src="/static/images/sycase5.jpg" class="vcenter"
+                                                                   alt=""/></a></div>
+                    <a href="case_show.html" class="case-zzc">
+                        <h3>婚礼花艺</h3>
+                        <p>某某鲜花礼品网，中国鲜花行业品牌服务商（2013、2015两次获得行业殊荣：中国电子商务协会评定为“中国互联网电子商务鲜花礼品行业龙头企业”），隶属于....</p>
+                    </a>
+                </li>
+                <li class="wow fadeInDown" data-wow-delay="0.4s">
+                    <div class="pic"><a href="case_show.html"><img src="/static/images/sycase6.jpg" class="vcenter"
+                                                                   alt=""/></a></div>
+                    <a href="case_show.html" class="case-zzc">
+                        <h3>婚礼花艺</h3>
+                        <p>某某鲜花礼品网，中国鲜花行业品牌服务商（2013、2015两次获得行业殊荣：中国电子商务协会评定为“中国互联网电子商务鲜花礼品行业龙头企业”），隶属于....</p>
+                    </a>
+                </li>
+                <li class="wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="pic"><a href="case_show.html"><img src="/static/images/sycase7.jpg" class="vcenter"
+                                                                   alt=""/></a></div>
+                    <a href="case_show.html" class="case-zzc">
+                        <h3>婚礼花艺</h3>
+                        <p>某某鲜花礼品网，中国鲜花行业品牌服务商（2013、2015两次获得行业殊荣：中国电子商务协会评定为“中国互联网电子商务鲜花礼品行业龙头企业”），隶属于....</p>
+                    </a>
+                </li>
+                <li class="wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="pic"><a href="case_show.html"><img src="/static/images/sycase8.jpg" class="vcenter"
+                                                                   alt=""/></a></div>
+                    <a href="case_show.html" class="case-zzc">
+                        <h3>婚礼花艺</h3>
+                        <p>某某鲜花礼品网，中国鲜花行业品牌服务商（2013、2015两次获得行业殊荣：中国电子商务协会评定为“中国互联网电子商务鲜花礼品行业龙头企业”），隶属于....</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--萌宠宝贝-->
+   {% include 'animal/animals_include.html' %}
+
+{% endblock %}

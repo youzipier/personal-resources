@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+{% block banner %}
+    <div><a href=""><img style="height: 400px" src="/static/images/banner4.jpg" alt=""></a></div>
+    <div><a href=""><img style="height: 400px" src="/static/images/banner4.jpg" alt=""></a></div>
+    <div><a href=""><img style="height: 400px" src="/static/images/banner4.jpg" alt=""></a></div>
+{% endblock %}
+<!--移动端  Mmenu-->
+{% block content %}
+
+
+<nav id="mmenu">
+    <ul>
+        <li><a href="">English</a></li>
+        <li><a href="index.html">首 页</a></li>
+        <li><a href="brand.html">品牌简介</a>
+            <ul>
+                <li><a href="brand.html">品牌简介</a></li>
+                <li><a href="">企业文化</a></li>
+                <li><a href="animal_index.html">荣誉资质</a></li>
+            </ul>
+        </li>
+        <li><a href="product.html">产品中心</a>
+            <ul>
+                <li><a href="">婚礼花艺</a>
+                    <ul>
+                        <li><a href="">求婚必备</a></li>
+                        <li><a href="">情人节专属</a></li>
+                        <li><a href="">其他鲜花</a></li>
+                    </ul>
+                </li>
+                <li><a href="product.html">爱情鲜花</a>
+                    <ul>
+                        <li><a href="">求婚必备</a></li>
+                        <li><a href="product.html">情人节专属</a></li>
+                        <li><a href="">其他鲜花</a></li>
+                    </ul>
+                </li>
+                <li><a href="">长辈鲜花</a>
+                    <ul>
+                        <li><a href="">求婚必备</a></li>
+                        <li><a href="">情人节专属</a></li>
+                        <li><a href="">其他鲜花</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </li>
+        <li><a href="case.html">经典案例</a>
+            <ul>
+                <li><a href="case.html">经典案例</a></li>
+                <li><a href="">新增分类</a></li>
+            </ul>
+        </li>
+        <li><a href="flower.html">花之物语</a>
+            <ul>
+                <li><a href="flower.html">花之物语</a></li>
+                <li><a href="">养花知识</a></li>
+            </ul>
+        </li>
+        <li><a href="contact.html">联系我们</a>
+            <ul>
+                <li><a href="contact.html">联系我们</a></li>
+                <li><a href="message.html">在线留言</a></li>
+                <li><a href="job.html">人才招聘</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+</div>
+
+<!--内页内容区域-->
+<div class="container ny-wrap">
+    <div class="pro-title clearfix">
+        <span class="pull-left">联系我们</span>
+        <p class="pull-right">
+            <a href="contact.html">联系我们</a><em>|</em>
+            <a class="active" href="message.html">在线留言</a><em>|</em>
+            <a href="job.html">人才招聘</a>
+        </p>
+    </div>
+    <div class="container message">
+        <div class="messageh">
+            <h2>There is doubt through the below <br/>message to consult us! </h2>
+            <span>有疑问就通过下方留言来咨询我们吧！</span>
+        </div>
+        <div class="message-con clearfix">
+            <div class="mcon-left pic pull-left"><img src="/static/images/haozi0.jpg" class="vcenter" alt=""/></div>
+            <div class="mcon-right pull-right">
+                <label><span>姓名</span><input type="text" class="mname" value=""/><em>*</em></label>
+                <label><span>联系电话</span><input type="text" class="mtel"/><em>*</em></label>
+                <label><span>联系地址</span><input type="text" class="madd"/></label>
+                <label><span>邮箱地址</span><input type="text" class="memail"/></label>
+                <label><span>留言内容</span><textarea name="" class="mcontent"></textarea><em>*</em></label>
+                <label class="mcodela"><input type="text" class="mcode"/><img src="/static/images/mcode.jpg" alt=""/><a
+                        href="#">看不清楚？换一张</a><em>*</em></label>
+                <label><input type="submit" class="msub" value="在线提交"/></label>
+            </div>
+        </div>
+    </div>
+
+
+    <!--花之物语-->
+    {% include 'animal/animals_include.html' %}
+    {% endblock %}
+</div>
+
+

@@ -1,0 +1,177 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <!--内页内容区域-->
+    <div class="container ny-wrap">
+        <div class="pro-title clearfix">
+            <span class="pull-left">展示中心</span>
+            <p class="pull-right">
+                <a href="#">花之物语</a><em>|</em>
+                <a class="active" href="product.html">爱情鲜花</a><em>|</em>
+                <a href="#">萌宠屋</a>
+            </p>
+        </div>
+        <div class="container love-wrap pro-con proshow-con">
+
+            <div class="proshow clearfix">
+                <div class="prosleft pull-left">
+                    <div class="products-pic-max f-l" id="slick-1">
+                        <div><span class="pic"><img src="/static/{{ flower.picture }}" class="vcenter"
+                                                    alt=""/><i></i></span></div>
+                    </div>
+                </div>
+                <div class="prosright pull-right">
+                    <h3>{{ flower.name }}</h3>
+                    <div class="txt" id="cont1">
+                        <p>{{ flower.introduce }}</p>
+                    </div>
+                    <div class="products-pic-min clearfix" id="slick-2">
+                        {% for picture in picture_list %}
+                        <div><span class="pic"><img src="/static/{{ picture.fpicture }}" class="vcenter"
+                                                    alt=""/><i></i></span></div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--相关产品-->
+        <div class="container xgcp love-wrap">
+            <div class="xgcp-title">
+                <h3>相似品质</h3>
+                <p>We hope that through the flower box of love, affection and friendship express intuitive, needless to
+                    say, everything is in the middle of the flower box. </p>
+            </div>
+            <ul class="clearfix xgcp-con">
+                {% for flower in flower_list %}
+                    <div>
+                    <li>
+                        <div class="pic"><a href="{% url 'flower:f_detail' %}?id={{ flower.id }}"><img src="/static/{{ flower.picture }}"
+                                                                           class="vcenter"/></a></div>
+                        <p><a href="{% url 'flower:f_detail' %}?id={{ flower.id }}">{{ flower.name }}</a></p>
+                    </li>
+                </div>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <!--花之物语-->
+        <div class="container flower-tips clearfix">
+            <div class="flowerh pull-left">
+                <h3>FLOWER TIPS</h3>
+                <div><span>花之物语</span><em></em></div>
+                <a href="flower.html">查看更多</a>
+                <p>我们希望，通过花盒把爱情，亲情以及友情直观的表达出来，无需多言，一切尽在花盒当中。</p>
+            </div>
+            <div class="flowertips-con pull-right">
+                <div class="flower-con">
+                    <ul>
+                        <li>
+                            <div class="flower-ch">
+                                <span>06-12</span><a href="flower_show.html">时尚广告片中的自然花艺某某鲜花测试文字</a>
+                                <div class="line"></div>
+                            </div>
+                            <p>2016年6月6日，第十届虎啸国际高峰论坛暨第七届虎啸奖颁奖盛典在上海隆重举行。作为商业传播领域最具权威性、前瞻性及创新性的大型赛事活动之一，虎啸奖至今已成功举办... </p>
+                            <a class="gengduo" href="flower_show.html">Read more</a>
+                        </li>
+                        <li>
+                            <div class="flower-ch">
+                                <span>06-12</span><a href="flower_show.html">鲜花测试文字母亲节之与妈妈的美丽“花约”</a>
+                                <div class="line"></div>
+                            </div>
+                            <p>作为商业传播领域最具权威性、前瞻性及创新性的大型赛事活动之一，虎啸奖至今已成功举办七届。在本届颁奖盛典上，某某科技有限公司创始人·总裁赵旭隆先生荣膺“年度人物大奖” </p>
+                            <a class="gengduo" href="flower_show.html">Read more</a>
+                        </li>
+                        <li class="last">
+                            <div class="flower-ch">
+                                <span>06-12</span><a href="flower_show.html">时尚广告片中的自然花艺某某鲜花测试文字</a>
+                                <div class="line"></div>
+                            </div>
+                            <p>2016年6月6日，第十届虎啸国际高峰论坛暨第七届虎啸奖颁奖盛典在上海隆重举行。作为商业传播领域最具权威性、前瞻性及创新性的大型赛事活动之一，虎啸奖至今已成功举办... </p>
+                            <a class="gengduo" href="flower_show.html">Read more</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+{% endblock %}
+
+{% block script %}
+    <!--移动端导航-->
+    <script src="/static/js/jquery.mmenu.all.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/static/js/jquery.mCustomScrollbar.concat.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+
+        jQuery(function () {
+
+            jQuery(window).load(function () {
+                $("#cont1").mCustomScrollbar();
+                $("#cont2").mCustomScrollbar({
+                    horizontalScroll: true
+                });
+            })
+
+        })
+
+    </script>
+    <script src="/static/js/public.js" type="text/javascript" charset="utf-8"></script>
+
+    <!--slick-->
+    <script src="/static/js/slick.min.js" type="text/javascript" charset="utf-8"></script>
+
+
+    <!--placeholder-->
+    <script src="/static/js/jquery.placeholder.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('input, textarea').placeholder();
+        });
+    </script>
+    <script type="text/javascript">
+
+        $("#slick-1").slick({
+            fade: true,
+            useTransform: true,
+            arrows: false,
+            asNavFor: "#slick-2"
+        })
+        $("#slick-2").slick({
+            focusOnSelect: true,
+            slidesToShow: 4,
+            useTransform: true,
+            arrows: true,
+            asNavFor: "#slick-1"
+        });
+        $(".products-pic2").slick({
+            arrows: false,
+            dots: true,
+            autoplaySpeed: 2000,
+            autoplay: true,
+            speed: 500,
+        })
+        $(".xgcp-con").slick({
+            arrows: true,
+            slidesToShow: 4,
+            dots: false,
+            autoplaySpeed: 2000,
+            autoplay: true,
+            speed: 500,
+        })
+        $(".phone-xgcp").slick({
+            arrows: true,
+            slidesToShow: 2,
+            dots: false,
+            autoplaySpeed: 2000,
+            autoplay: true,
+            speed: 500,
+        })
+
+    </script>
+    <!--<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
+
+{% endblock %}

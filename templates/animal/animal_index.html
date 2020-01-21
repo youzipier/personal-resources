@@ -1,0 +1,202 @@
+{% extends 'base.html' %}
+
+{% block banner %}
+    <div><a href=""><img style="height: 400px" src="/static/images/banner4.jpg" alt=""></a></div>
+    <div><a href=""><img style="height: 400px" src="/static/images/banner4.jpg" alt=""></a></div>
+    <div><a href=""><img style="height: 400px" src="/static/images/banner4.jpg" alt=""></a></div>
+
+{% endblock %}
+{% block content %}
+
+<!--移动端  Mmenu-->
+<nav id="mmenu">
+    <ul>
+        <li><a href="">English</a></li>
+        <li><a href="index.html">首 页</a></li>
+        <li><a href="brand.html">品牌简介</a>
+            <ul>
+                <li><a href="brand.html">品牌简介</a></li>
+                <li><a href="">企业文化</a></li>
+                <li><a href="animal_index.html">荣誉资质</a></li>
+            </ul>
+        </li>
+        <li><a href="product.html">产品中心</a>
+            <ul>
+                <li><a href="">婚礼花艺</a>
+                    <ul>
+                        <li><a href="">求婚必备</a></li>
+                        <li><a href="">情人节专属</a></li>
+                        <li><a href="">其他鲜花</a></li>
+                    </ul>
+                </li>
+                <li><a href="product.html">爱情鲜花</a>
+                    <ul>
+                        <li><a href="">求婚必备</a></li>
+                        <li><a href="product.html">情人节专属</a></li>
+                        <li><a href="">其他鲜花</a></li>
+                    </ul>
+                </li>
+                <li><a href="">长辈鲜花</a>
+                    <ul>
+                        <li><a href="">求婚必备</a></li>
+                        <li><a href="">情人节专属</a></li>
+                        <li><a href="">其他鲜花</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </li>
+        <li><a href="case.html">经典案例</a>
+            <ul>
+                <li><a href="case.html">经典案例</a></li>
+                <li><a href="">新增分类</a></li>
+            </ul>
+        </li>
+        <li><a href="flower.html">花之物语</a>
+            <ul>
+                <li><a href="flower.html">花之物语</a></li>
+                <li><a href="">养花知识</a></li>
+            </ul>
+        </li>
+        <li><a href="contact.html">联系我们</a>
+            <ul>
+                <li><a href="contact.html">联系我们</a></li>
+                <li><a href="message.html">在线留言</a></li>
+                <li><a href="job.html">人才招聘</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+</div>
+
+<!--内页内容区域-->
+<div class="container ny-wrap">
+    <div class="pro-title clearfix">
+        <span class="pull-left">萌宠来了</span>
+        <p class="pull-right">
+            <a href="brand.html">品牌简介</a><em>|</em>
+            <a href="#">企业文化</a><em>|</em>
+            <a class="active" href="{% url 'animal:a_index' %}">萌宠来了</a>
+        </p>
+    </div>
+    <div class="container honor">
+        <div class="container">
+            <div class="about-visual-recommon">
+                <div class="pics-1 wow bounceInDown" data-wow-delay=".2s" id="slick-1">
+                    <div>
+                        <a href="javascript:;" class="items block">
+                            <i class="pic"><img src="/static/images/haozi0.jpg" class="vcenter" alt=""/></i>
+                            <span class="name">仓鼠小可爱</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="javascript:;" class="items block">
+                            <i class="pic"><img src="/static/images/samoye.jpg" class="vcenter" alt=""/></i>
+                            <span class="name">别跑肯定能追上你的</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="javascript:;" class="items block">
+                            <i class="pic"><img src="/static/images/rundog.jpg" class="vcenter" alt=""/></i>
+                            <span class="name">短腿柯基满草坪跑来跑去</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="javascript:;" class="items block">
+                            <i class="pic"><img src="/static/images/cat9.jpg" class="vcenter" alt=""/></i>
+                            <span class="name">你瞅,这多招人稀罕啊</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="javascript:;" class="items block">
+                            <i class="pic"><img src="/static/images/dog3.jpg" class="vcenter" alt=""/></i>
+                            <span class="name">你看你笑起来是不是很像他</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pics2-2">
+                    <div class="pics2-1">
+                        <div class="pics-2 wow bounceInDown" id="slick-2" style="top:-25px;left:20px">
+                            <div>
+                                <a href="javascript:;" class="items block">
+                                    <i class="pic"><img src="/static/images/samoye.jpg" class="vcenter" alt=""/></i>
+                                    <span class="name"></span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="javascript:;" class="items block">
+                                    <i class="pic"><img src="/static/images/rundog.jpg" class="vcenter" alt=""/></i>
+                                    <span class="name">短腿柯基满草坪跑来跑去</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="javascript:;" class="items block">
+                                    <i class="pic"><img src="/static/images/cat9.jpg" class="vcenter" alt=""/></i>
+                                    <span class="name">你瞅,这可太招人稀罕了</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="javascript:;" class="items block">
+                                    <i class="pic"><img src="/static/images/dog3.jpg" class="vcenter" alt=""/></i>
+                                    <span class="name">你看你笑起来是不是很像他</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="javascript:;" class="items block">
+                                    <i class="pic"><img src="/static/images/haozi0.jpg" class="vcenter" alt=""/></i>
+                                    <span class="name">仓鼠小可爱</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="controller">
+                    <a href="javascript:;" class="wow bounceInDown" id="slick-1-prev" data-wow-delay=".3s"></a>
+                    <a href="javascript:;" class="wow bounceInDown" id="slick-1-next" data-wow-delay=".4s"></a>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+   {% include 'animal/animals_include.html' %}
+{% endblock %}
+
+{% block script %}
+<!--placeholder-->
+<script src="/static/js/jquery.placeholder.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(function(){ $('input, textarea').placeholder(); });
+</script>
+<script type="text/javascript">
+        $(document).ready(function() {
+            $("#slick-1").slick({
+                arrows: false,
+                draggable: false,
+                useTransform: true
+            }).slick("slickGoTo", 1);
+            $("#slick-2").slick({
+                arrows: false,
+                draggable: false,
+                useTransform: true
+            });
+
+            /*Controller*/
+            $("#slick-1-prev").click(function() {
+                $("#slick-1,#slick-2").slick("slickPrev");
+            })
+            $("#slick-1-next").click(function() {
+                $("#slick-1,#slick-2").slick("slickNext");
+            })
+            $("#slick-1-next,#slick-1-prev").click(function() {
+                $(".about-visual-recommon").toggleClass("active");
+            })
+        })
+    </script>
+{% endblock %}
+

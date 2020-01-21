@@ -1,0 +1,191 @@
+{% extends 'base.html' %}
+{% block banner %}
+    <div><a href=""><img style="height: 400px" src="/static/images/banner4.jpg" alt=""></a></div>
+    <div><a href=""><img style="height: 400px" src="/static/images/banner4.jpg" alt=""></a></div>
+    <div><a href=""><img style="height: 400px" src="/static/images/banner4.jpg" alt=""></a></div>
+{% endblock %}
+
+
+{% block content %}
+
+
+    <!--移动端  Mmenu-->
+    <nav id="mmenu">
+        <ul>
+            <li><a href="">English</a></li>
+            <li><a href="index.html">首 页</a></li>
+            <li><a href="brand.html">品牌简介</a>
+                <ul>
+                    <li><a href="brand.html">品牌简介</a></li>
+                    <li><a href="">企业文化</a></li>
+                    <li><a href="animal_index.html">荣誉资质</a></li>
+                </ul>
+            </li>
+            <li><a href="product.html">产品中心</a>
+                <ul>
+                    <li><a href="">婚礼花艺</a>
+                        <ul>
+                            <li><a href="">求婚必备</a></li>
+                            <li><a href="">情人节专属</a></li>
+                            <li><a href="">其他鲜花</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="product.html">爱情鲜花</a>
+                        <ul>
+                            <li><a href="">求婚必备</a></li>
+                            <li><a href="product.html">情人节专属</a></li>
+                            <li><a href="">其他鲜花</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">长辈鲜花</a>
+                        <ul>
+                            <li><a href="">求婚必备</a></li>
+                            <li><a href="">情人节专属</a></li>
+                            <li><a href="">其他鲜花</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+            <li><a href="case.html">经典案例</a>
+                <ul>
+                    <li><a href="case.html">经典案例</a></li>
+                    <li><a href="">新增分类</a></li>
+                </ul>
+            </li>
+            <li><a href="flower.html">花之物语</a>
+                <ul>
+                    <li><a href="flower.html">花之物语</a></li>
+                    <li><a href="">养花知识</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">联系我们</a>
+                <ul>
+                    <li><a href="contact.html">联系我们</a></li>
+                    <li><a href="message.html">在线留言</a></li>
+                    <li><a href="job.html">人才招聘</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+  
+
+    <!--内页内容区域-->
+    <div class="container ny-wrap">
+        <div class="pro-title clearfix">
+            <span class="pull-left">花之物语</span>
+            <p class="pull-right">
+                <a class="active" href="{% url 'animal:a_add' %}">欢迎补充</a><em>|</em>
+                <a href="#">养花知识</a>
+            </p>
+        </div>
+        <div class="container flower-wuyu">
+            <ul class="clearfix">
+                <li>
+                    <div class="pic"><a href="animal_show.html"><img src="/static/images/flower-img1.png" class="vcenter"
+                                                                     alt=""/></a></div>
+                    <div class="flowertxt">
+                        <span>2016.06.14</span>
+                        <a href="animal_show.html">花之物语信息测试某某科技有限公司所服务的陆金所荣获第七届虎啸奖年度广告主杰...</a>
+                        <p>2016年6月6日，第十届虎啸国际高峰论坛暨第七届虎啸奖颁奖盛典在上海隆重举行。作为商业传播领域最具权威性、前瞻性及创新性的大型赛事活动之一，虎啸奖至今已成功举办七届。</p>
+                        <a href="animal_show.html" class="flower-jt"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic"><a href="animal_show.html"><img src="/static/images/flower-img2.png" class="vcenter"
+                                                                     alt=""/></a></div>
+                    <div class="flowertxt">
+                        <span>2016.06.14</span>
+                        <a href="animal_show.html">花之物语信息测试某某科技有限公司总裁赵旭隆荣膺第七届虎啸奖年度人物大奖</a>
+                        <p>
+                            虎啸奖由虎啸传媒发起并创立，中国商务广告协会数字营销委员会与虎啸传媒联合主办。作为少数专注数字营销的高端盛会之一，本届大赛共收录近240家公司的作品1500余件，案例类共甄选出来120余家公司的420...</p>
+                        <a href="animal_show.html" class="flower-jt"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic"><a href="animal_show.html"><img src="/static/images/flower-img3.png" class="vcenter"
+                                                                     alt=""/></a></div>
+                    <div class="flowertxt">
+                        <span>2016.06.14</span>
+                        <a href="animal_show.html">因为有你，一切珍好—— <br/>某某五月员工生日会</a>
+                        <p>夏天的脚步悄悄靠近，而某某科技有限公司，也迎来了五月生日会，三月热情的BBQ，四月神奇的密室逃脱，还历历在目，五月又会带来怎样的惊喜，duang~duang~duang~</p>
+                        <a href="animal_show.html" class="flower-jt"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic"><a href="animal_show.html"><img src="/static/images/flower-img4.png" class="vcenter"
+                                                                     alt=""/></a></div>
+                    <div class="flowertxt">
+                        <span>2016.06.14</span>
+                        <a href="animal_show.html">花之物语信息测试“鸿鹄之 · 智”2016新浪程序化营销峰会圆满落幕</a>
+                        <p>
+                            虎啸奖由虎啸传媒发起并创立，中国商务广告协会数字营销委员会与虎啸传媒联合主办。作为少数专注数字营销的高端盛会之一，本届大赛共收录近240家公司的作品1500余件，案例类共甄选出来120余家公司的420...</p>
+                        <a href="animal_show.html" class="flower-jt"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic"><a href="animal_show.html"><img src="/static/images/flower-img5.png" class="vcenter"
+                                                                     alt=""/></a></div>
+                    <div class="flowertxt">
+                        <span>2016.06.14</span>
+                        <a href="animal_show.html">花之物语信息测试某某科技有限公司所服务的陆金所荣获第七届虎啸奖年度广告主杰...</a>
+                        <p>2016年6月6日，第十届虎啸国际高峰论坛暨第七届虎啸奖颁奖盛典在上海隆重举行。作为商业传播领域最具权威性、前瞻性及创新性的大型赛事活动之一，虎啸奖至今已成功举办七届。</p>
+                        <a href="animal_show.html" class="flower-jt"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic"><a href="animal_show.html"><img src="/static/images/flower-img6.png" class="vcenter"
+                                                                     alt=""/></a></div>
+                    <div class="flowertxt">
+                        <span>2016.06.14</span>
+                        <a href="animal_show.html">花之物语信息测试营销界“绝代双骄”如何双剑合璧？</a>
+                        <p>
+                            虎啸奖由虎啸传媒发起并创立，中国商务广告协会数字营销委员会与虎啸传媒联合主办。作为少数专注数字营销的高端盛会之一，本届大赛共收录近240家公司的作品1500余件，案例类共甄选出来120余家公司的420...</p>
+                        <a href="animal_show.html" class="flower-jt"></a>
+                    </div>
+                </li>
+            </ul>
+            <div class="page">
+                <a href="#">首页</a>
+                <a class="prev" href="#"><img src="/static/images/pre-bg.png" alt=""/> 上一页</a>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a class="next" href="#">下一页 <img src="/static/images/next-bg.png" alt=""/></a>
+                <a href="#">尾页</a>
+            </div>
+        </div>
+        <div class="container new-pro">
+            <div class="case-title">
+                <h3>新品推荐</h3>
+                <span><img src="/static/images/pro-casebg.png" alt=""/>NEW PRODUCTS</span>
+            </div>
+            <div class="love-wrap">
+                <ul class="clearfix">
+                    <li>
+                        <div class="pic"><a href="pro_show.html"><img src="/static/images/love1.jpg" class="vcenter"/></a></div>
+                        <p><a href="pro_show.html">海洋之心</a><em>¥</em> <span>399</span></p>
+                    </li>
+                    <li>
+                        <div class="pic"><a href="pro_show.html"><img src="/static/images/love2.jpg" class="vcenter"/></a></div>
+                        <p><a href="pro_show.html">给柏拉图的信</a><em>¥</em> <span>399</span></p>
+                    </li>
+                    <li>
+                        <div class="pic"><a href="pro_show.html"><img src="/static/images/love3.jpg" class="vcenter"/></a></div>
+                        <p><a href="pro_show.html">雍容</a><em>¥</em> <span>399</span></p>
+                    </li>
+                    <li>
+                        <div class="pic"><a href="pro_show.html"><img src="/static/images/love4.jpg" class="vcenter"/></a></div>
+                        <p><a href="pro_show.html">普罗旺斯的一年</a><em>¥</em> <span>1999</span></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+{% endblock %}

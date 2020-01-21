@@ -1,0 +1,147 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+    <!--移动端  Mmenu-->
+    <nav id="mmenu">
+        <ul>
+            <li><a href="">English</a></li>
+            <li><a href="index.html">首 页</a></li>
+            <li><a href="brand.html">品牌简介</a>
+                <ul>
+                    <li><a href="brand.html">品牌简介</a></li>
+                    <li><a href="">企业文化</a></li>
+                    <li><a href="honor.html">荣誉资质</a></li>
+                </ul>
+            </li>
+            <li><a href="{% url 'flower:f_list' %}">产品中心</a>
+                <ul>
+                    <li><a href="">婚礼花艺</a>
+
+                    </li>
+                    <li><a href="{% url 'flower:f_list' %}">爱情鲜花</a>
+                        <ul>
+                            <li><a href="">求婚必备</a></li>
+                            <li><a href="{% url 'flower:f_list' %}">情人节专属</a></li>
+                            <li><a href="">其他鲜花</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">长辈鲜花</a>
+                        <ul>
+                            <li><a href="">求婚必备</a></li>
+                            <li><a href="">情人节专属</a></li>
+                            <li><a href="">其他鲜花</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+            <li><a href="case.html">经典案例</a>
+                <ul>
+                    <li><a href="case.html">经典案例</a></li>
+                    <li><a href="">新增分类</a></li>
+                </ul>
+            </li>
+            <li><a href="flower.html">花之物语</a>
+                <ul>
+                    <li><a href="flower.html">花之物语</a></li>
+                    <li><a href="">养花知识</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">联系我们</a>
+                <ul>
+                    <li><a href="contact.html">联系我们</a></li>
+                    <li><a href="message.html">在线留言</a></li>
+                    <li><a href="job.html">人才招聘</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    </div>
+
+    <!--内页内容区域-->
+    <div class="container ny-wrap">
+        <div class="pro-title clearfix">
+            <span class="pull-left">产品中心</span>
+            <p class="pull-right">
+                <a href="{% url 'flower:f_add' %}">欢迎补充</a>
+            </p>
+        </div>
+        <div class="container love-wrap pro-con">
+
+            <div class="fenlei">
+                <a href="#">求婚必备</a>
+                <a class="active" href="#">情人节专属</a>
+                <a href="#">其他鲜花</a>
+            </div>
+            {% verbatim myblock %}
+                <div id="content">
+                    <ul class="clearfix">
+                        <li v-for="flower in page_data">
+                            <div class="pic"><a v-bind:href="'/flower_detail/?id='+flower.id">
+                                <img :src="'/static/'+flower.picture" class="vcenter"/></a></div>
+                            <p><a v-bind:href="'/flower_detail/?id='+flower.id">{{ flower.name }}</a></p>
+                        </li>
+                    </ul>
+                    <div class="dataTables_paginate paging_simple_numbers">
+                        <ul class="pagination">
+                            <li v-for="p in page_range " class="paginate_button page-item previous">
+                                <a v-on:click="get_page(p)" class="page-link">{{ p }}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            {% endverbatim myblock %}
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block script %}
+    <script>
+        Vue.use(VueResource);
+        var vue = new Vue(
+            {
+                el: '#content',//控制范围
+                data: {
+                    page_data: [],
+                    page_range: [],
+                    page: 1,
+
+                },
+                created: function () {
+                    this.$http.get('/list_ajax/').then(
+                        function (data) {
+                            this.page_data = data['body']['data'];
+                            this.page = data['body']['page'];
+                            this.page_range = data['body']['page_range'];
+                            console.log(data)
+                        },
+                        function (error) {
+                            console.log(error)
+                        }
+                    )
+                },
+                methods: {
+                    get_page: function (page) {
+                        console.log(page);
+                        var url = '/list_ajax/?page=' + page;
+                        this.$http.get(url).then(
+                            function (data) {
+                                this.page_data = data['body']['data'];
+                                this.page = data['body']['page'];
+                                this.page_range = data['body']['page_range'];
+                                console.log(data)
+                            },
+                            function (error) {
+                                console.log(error)
+                            }
+                        )
+                    }
+                }
+            }
+        )
+
+    </script>
+{% endblock %}
