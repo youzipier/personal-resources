@@ -2,244 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4ac5ff0-e34d-47ab-ac3a-ef0e7867a445" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/c23c4a79-4dac-4f56-bcae-da99dee3752c.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/c23c4a79-4dac-4f56-bcae-da99dee3752c/storage_v2/_src_/schema/main.uQUzAA.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/enjoy.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/animal/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/animal/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/animal/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/animal/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/animal/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/animal/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/animal/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/animal/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/animal/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/daylife/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/daylife/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/daylife/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/daylife/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/daylife/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/daylife/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/daylife/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/daylife/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/daylife/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enjoy/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enjoy/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enjoy/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enjoy/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flower/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flower/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flower/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flower/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flower/migrations/0002_flowewrpic.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flower/migrations/0003_flowewrpic_flower.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flower/migrations/0004_auto_20200109_2115.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flower/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flower/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flower/templatetags/OurTag.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flower/templatetags/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flower/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flower/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flower/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/.project" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/error404.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/jquery.mCustomScrollbar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/jquery.mmenu.all.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/photo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/slick.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/style.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/widget.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/widget.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/1bc4c598cdc5d3109726b3afb5128998.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/23a8062ca188e3007fa8f3f3ea42ff8e.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/28204df1f31dd7eb7fb94c0acab514b4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/bai1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/bai2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/bai3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/bai4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/fen1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/fen2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/fen3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/fen4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/lan1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/lan2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/lan3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/lan4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/page_1_10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/page_1_12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/page_1_16.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/page_1_17.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/page_1_17_54L07FC.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/page_1_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/page_1_24.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/u2947002186959223537fm26gp0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/wu0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/wu1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/wu2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/wu3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/wu4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/wufen1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/wufen2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/wufen3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/wufen4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/wuhuang1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/wuhuang2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/wuhuang3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/wuhuang4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/wuwangwo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/wuzi1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/wuzi2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/wuzi3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/wuzi4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/zi1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/zi2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/zi3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/zi4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/flower/images/zi5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/lg.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/lg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/lg.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/lg.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/404.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/add.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/banner1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/banner2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/banner3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/banner4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/banner_btnl.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/banner_btnr.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/brand-banner.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/brand-in.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/brandimg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/case-banner.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/caseshow.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/cat1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/cat10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/cat2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/cat3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/cat9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/codeimg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/contact-banner.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/contactbg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/dog1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/dog3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/email.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/erweima.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/flower-banner.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/flower-img1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/flower-img2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/flower-img3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/flower-img4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/flower-img5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/flower-img6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/flower-jt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/flower-jthover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/flowerline.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/footer-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/friends-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/fshowimg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/fshowimg2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/fshowimg3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/haozi.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/haozi0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hnext.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hnexthover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/honor.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/honor2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hprehover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hprev.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/inquiry-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/jobbg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/keji.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/love1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/love2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/love3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/love4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/mcode.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/message.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/monkey.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/next-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/next-bghover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/next.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/nextbtn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/nextbtnhover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/nexthover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/pc.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/phone.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/pre-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/pre-bghover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/pre.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/prebtn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/prebtnhover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/prehover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/pro-banner.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/pro-casebg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/proshow1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/readmore.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/renews-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/rundog.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/samoye.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/search.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/shuaxin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/sycase1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/sycase2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/sycase3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/sycase4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/sycase5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/sycase6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/sycase7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/sycase8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/tel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/tijiao.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/web.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/yu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jquery.colorbox-min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jquery.mCustomScrollbar.concat.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jquery.mmenu.all.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jquery.mousewheel.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jquery.placeholder.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/lg-fullscreen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/lg-thumbnail.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/lightgallery-all.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/masonry.pkgd.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/plug.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/public.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/slick.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vue/vue-resource.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/vue/vue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/animal/animal_add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/animal/animal_index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/animal/animal_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/animal/animal_show.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/animal/animals_include.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/daylife/day_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/daylife/daylist.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/flower/flower_add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/flower/flower_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/flower/flower_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/flower/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/daylife/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/daylife/migrations/0002_daylife_daystory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/jquery-1.12.4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/daylife/daydetail_add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/daylife/daylife_add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/daylife/echart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/daylife/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/daylife/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c23c4a79-4dac-4f56-bcae-da99dee3752c.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c23c4a79-4dac-4f56-bcae-da99dee3752c/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/daylife/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/daylife/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/daylife/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/daylife/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/daylife/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/daylife/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/daylife/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/daylife/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flower/templatetags/OurTag.py" beforeDir="false" afterPath="$PROJECT_DIR$/flower/templatetags/OurTag.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/daylife/day_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/daylife/day_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/daylife/daylist.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/daylife/daylist.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -285,8 +71,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -301,11 +87,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="sqlite" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/daylife" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
@@ -320,6 +107,7 @@
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\enjoy\templates\daylife" />
+      <recent name="E:\enjoy\static\js" />
       <recent name="E:\django_project\enjoy\templates\animal" />
       <recent name="E:\django_project\enjoy\static" />
       <recent name="E:\django_project\enjoy\static\images" />
@@ -408,6 +196,13 @@
       <workItem from="1579087834165" duration="1818000" />
       <workItem from="1579442513038" duration="755000" />
       <workItem from="1579483946713" duration="4591000" />
+      <workItem from="1579573281748" duration="9328000" />
+      <workItem from="1579604104110" duration="4460000" />
+      <workItem from="1579686845144" duration="5875000" />
+      <workItem from="1579739481895" duration="27141000" />
+      <workItem from="1579924103844" duration="12803000" />
+      <workItem from="1580000747119" duration="940000" />
+      <workItem from="1580014887081" duration="4458000" />
     </task>
     <servers />
   </component>
@@ -415,33 +210,77 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="275" y="25" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579689268805">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="25" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1579689268805" />
     <state x="391" y="0" width="598" height="728" key="#enjoy" timestamp="1579442685686">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="391" y="0" width="598" height="728" key="#enjoy/0.0.1366.728@0.0.1366.728" timestamp="1579442685686" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1579442554580">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1579592745983">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1579442554580" />
-    <state width="1323" height="172" key="GridCell.Tab.0.bottom" timestamp="1579512307768">
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1579592745983" />
+    <state width="864" height="176" key="GridCell.Tab.0.bottom" timestamp="1580000758298">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="172" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1579512307768" />
-    <state width="1323" height="172" key="GridCell.Tab.0.center" timestamp="1579512307768">
+    <state width="864" height="176" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580000758298" />
+    <state width="864" height="176" key="GridCell.Tab.0.center" timestamp="1580000758298">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="172" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1579512307768" />
-    <state width="1323" height="172" key="GridCell.Tab.0.left" timestamp="1579512307767">
+    <state width="864" height="176" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1580000758298" />
+    <state width="864" height="176" key="GridCell.Tab.0.left" timestamp="1580000758297">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="172" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1579512307767" />
-    <state width="1323" height="172" key="GridCell.Tab.0.right" timestamp="1579512307768">
+    <state width="864" height="176" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1580000758297" />
+    <state width="864" height="176" key="GridCell.Tab.0.right" timestamp="1580000758298">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="172" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1579512307768" />
+    <state width="864" height="176" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1580000758298" />
+    <state width="1265" height="161" key="GridCell.Tab.1.bottom" timestamp="1579946060675">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1265" height="161" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1579946060675" />
+    <state width="1265" height="161" key="GridCell.Tab.1.center" timestamp="1579946060675">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1265" height="161" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1579946060675" />
+    <state width="1265" height="161" key="GridCell.Tab.1.left" timestamp="1579946060674">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1265" height="161" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1579946060674" />
+    <state width="1265" height="161" key="GridCell.Tab.1.right" timestamp="1579946060675">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1265" height="161" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1579946060675" />
+    <state width="220" height="477" key="HiddenNamespacesPopup" timestamp="1579689244402">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="220" height="477" key="HiddenNamespacesPopup/0.0.1366.728@0.0.1366.728" timestamp="1579689244402" />
     <state x="60" y="0" key="SettingsEditor" timestamp="1579443170057">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="60" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1579443170057" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1579610418116">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1579610418116" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/daylife/forms.py</url>
+          <line>12</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/daylife/views.py</url>
+          <line>93</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

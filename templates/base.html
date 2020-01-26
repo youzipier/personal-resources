@@ -54,21 +54,21 @@
                             <li><a href="product.html">长辈鲜花</a></li>
                         </ul>
                     </li>
-                    <li><a href="case.html">萌宠宝贝</a>
+                    <li><a href="{% url 'animal:a_index' %}">萌宠宝贝</a>
                         <ul>
-                            <li><a href="case.html">经典案例</a></li>
+                            <li><a href="{% url 'daylife:daylist' %}">经典案例</a></li>
                             <li><a href="#">新增分类</a></li>
                         </ul>
                     </li>
-                    <li><a href="flower.html">生活点滴</a>
+                    <li><a href="{% url 'daylife:daylist' %}">生活点滴</a>
                         <ul>
-                            <li><a href="flower.html">花之物语</a></li>
+                            <li><a href="{% url 'daylife:dayechart' %}">日程分析</a></li>
                             <li><a href="#">养花知识</a></li>
                         </ul>
                     </li>
-                    <li><a href="contact.html">故事分享</a>
+                    <li><a href="{% url 'daylife:daylist' %}">故事分享</a>
                         <ul>
-                            <li><a href="contact.html">联系我们</a></li>
+                            <li><a href="{% url 'daylife:dayechart' %}">联系我们</a></li>
                             <li><a href="message.html">在线留言</a></li>
                             <li><a href="job.html">人才招聘</a></li>
                         </ul>
@@ -116,8 +116,8 @@
                     <li><a href="{% url 'flower:f_list' %}">花之物语</a></li>
                     <li><a href="case.html">萌宠宝贝</a></li>
                     <li><a href="flower.html">生活点滴</a></li>
-                    <li><a href="contact.html">故事分享</a></li>
-                    <li><a href="map.html">站点地图</a></li>
+                    <li><a href="{% url 'daylife:daylist' %}">故事分享</a></li>
+                    <li><a href="{% url 'daylife:dayechart' %}">日程分析</a></li>
                 </ul>
             </div>
             <div class="footer-right pull-right">
@@ -136,6 +136,7 @@
 <script src="http://apps.bdimg.com/libs/jquery/1.8.3/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 
 <!--移动端导航-->
+<script src="/static/js/jquery-1.12.4.min.js"></script>
 <script src="/static/js/jquery.mmenu.all.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="/static/vue/vue.js" type="text/javascript" charset="utf-8"></script>
 <script src="/static/vue/vue-resource.js" type="text/javascript" charset="utf-8"></script>

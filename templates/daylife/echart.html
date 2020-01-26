@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% block banner %}
+    <div><a href=""><img style="height: 400px" src="/static/images/banner12.jpg" alt=""></a></div>
+    <div><a href=""><img style="height: 400px" src="/static/images/banner12.jpg" alt=""></a></div>
+    <div><a href=""><img style="height: 400px" src="/static/images/banner12.jpg" alt=""></a></div>
+
+{% endblock %}
+{% block content %}
+    <div style="height: 500px;width: 1380px;background: url('/static/images/back1.jpg') no-repeat">
+    <div style="margin-left:400px; width: 600px;height: 500px" id="panel"></div>
+    </div>
+{% endblock %}
+{% block script %}
+    <script src="/static/js/echarts.min.js"></script>
+    <script>
+        var myChart = echarts.init(document.getElementById('panel'));
+        var colors = ['#1ca9f3', '#d134a0', '#1b00ba'];
+        option = {
+            color: colors,
+
+            tooltip: {
+                trigger: 'none',
+                axisPointer: {
+                    type: 'cross'
+                }
+            },
+            legend: {
+                data:['出门时间', '学习时间']
+            },
+            grid: {
+                top: 70,
+                bottom: 50
+            },
+            xAxis: [
+                {
+                    type: 'category',
+                    axisTick: {
+                        alignWithLabel: true
+                    },
+                    axisLine: {
+                        onZero: false,
+                        lineStyle: {
+                            color: colors[1]
+                        }
+                    },
+                    axisPointer: {
+                        label: {
+                            formatter: function (params) {
+                                return '学习时间  ' + params.value
+                                    + (params.seriesData.length ? '：' + params.seriesData[0].data : '');
+                            }
+                        }
+                    },
+                    data: ['1/19', '1/20', '1/21', '1/22', '1/23', '1/24', '1/25', '1/26', '1/27']
+                },
+                {
+                    type: 'category',
+                    axisTick: {
+                        alignWithLabel: true
+                    },
+                    axisLine: {
+                        onZero: false,
+                        lineStyle: {
+                            color: colors[0]
+                        }
+                    },
+                    axisPointer: {
+                        label: {
+                            formatter: function (params) {
+                                return '出门时间  ' + params.value
+                                    + (params.seriesData.length ? '：' + params.seriesData[0].data : '');
+                            }
+                        }
+                    },
+                    data: ['1/19', '1/20', '1/21', '1/22', '1/23', '1/24', '1/25', '1/26', '1/27']
+                }
+            ],
+            yAxis: [
+                {
+                    type: 'value'
+                }
+            ],
+            series: [
+                {
+                    name: '出门时间',
+                    type: 'line',
+                    xAxisIndex: 1,
+                    smooth: true,
+                    data: [6,0,3,8,2,0,0,0,0]
+                },
+                {
+                    name: '学习时间',
+                    type: 'line',
+                    smooth: true,
+                    data: [0,4,4,0,5,0,2,6,0]
+                }
+            ]
+        };
+        myChart.setOption(option);
+
+    </script>
+{% endblock %}
